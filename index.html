@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width,initial-scale=1, user-scalable=no"/>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+	<link rel="stylesheet" type="text/css" href="games.css">
+	<script src="games.js">games.js</script>
+	<title>GAME SELECTOR</title>
+</head>
+<body>
+	<div class="container">
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Home</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Mixer<span class="sr-only">(current)</span></a></li>
+        <li><a href="#">Entertainment</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">List<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+      <form class="navbar-form navbar-left">
+        <div class="form-group">
+          <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search games..">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">About </a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Specs<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+ <div class="listing">
+
+<table class="table" id="myTable">
+	<tr>
+		<th onclick="sortTable(0)">Title</th>
+		<th onclick="sortTable(1)">Image</th>
+		<th onclick="sortTable(2)">Platform</th>
+		<th onclick="sortTable(3)">Score</th>
+		<th onclick="sortTable(4)">Genre</th>
+		<th onclick="sortTable(5)">Editors-Choice</th>
+	</tr>
+	<tr> 
+		<td class="item">Resident Evil</td>
+		<td class="item"><img src="images/resident.jpeg"></td>
+		<td class="item">Xbox</td>
+		<td class= "item">6.0</td>
+		<td class="item">Fighting</td>
+		<td class="item"><img src="images/gold star.jpg"><img src="images/gold star.jpg"></td>
+	</tr>
+	<tr>
+		<td>Assasins Creed</td>
+		<td><img src="images/assasins-creed-origins.jpg"></td>
+		<td>Xbox</td>
+		<td>6.5</td>
+		<td>Shooter</td>
+		<td><img src="images/gold star.jpg"></td>
+
+	</tr>
+	<tr>
+		<td>Bungie</td>
+		<td ><img src="images/bungie.jpeg"></td>
+		<td>PS4</td>
+		<td>8</td>
+		<td>Platformer</td>
+		<td><img src="images/gold star.jpg"></td>
+	</tr>
+	<tr>
+		<td>Call of Duty</td>
+		<td><img src="images/cod.jpeg"></td>
+		<td>PS4</td>
+		<td>8</td>
+		<td>Beat 'em Up</td>
+		<td><img src="images/gold star.jpg"><img src="images/gold star.jpg"><img src="images/gold star.jpg"></td>
+	</tr>
+  </table>
+ 
+ 			<div class="pagination">
+				<h5><b>Browse pages here</b></h5>
+			  <a href="#">&laquo;</a>
+			  <a href="games3.html">1</a>
+			  <a href="games2.html">2</a>
+			  <a class="active"href="#">3</a>
+			  <a href="">4</a>
+			  <a href="#">5</a>
+			  <a href="#">6</a>
+			  <a href="#">7</a>
+			  <a href="#">8</a>
+			  <a href="#">9</a>
+			  <a href="#">&raquo;</a>
+          </div>
+	    </div>
+	    </div>
+	   
+    </body>
+</html>  
